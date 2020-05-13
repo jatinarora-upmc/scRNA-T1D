@@ -1,5 +1,6 @@
-# function to normalise (SCtransform) data in seurat object and
-# find given number of variable genes
+# normalise (sctransform) and get variable genes
+# pbmc.fun is seurat object
+# nGenes is the number of variable genes u want
 
 normalise_seurat <- function(pbmc.fun, nGenes, var.toRegress){
   # normalise, and regress-out the effect of variable (if given)
